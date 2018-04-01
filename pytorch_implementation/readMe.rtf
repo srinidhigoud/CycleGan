@@ -1,0 +1,56 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 All the required options are in options folder\
+Just run the batch_new file\
+Please refer to the link https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix to download additional data sets, or apply pertained models\
+\
+The options are available are in ~/options where there are base options, test options and train options that can be set\
+Checkpoints have log files for losses, epoch wise training results (couldn\'92t download memory intensive .pth files but added few screen shots)\
+\
+Results and checkpoints have html files, please view those for results.\
+\
+Data loader files are present in the data file, where we can load based on the options\
+\
+------------ Options -------------\
+aspect_ratio: 1.0\
+batchSize: 1\
+checkpoints_dir: ./checkpoints\
+dataroot: ./datasets/horse2zebra/testA\
+dataset_mode: single\
+display_id: 1\
+display_port: 8097\
+display_winsize: 256\
+fineSize: 256\
+gpu_ids: [0]\
+how_many: 50\
+init_type: normal\
+input_nc: 3\
+isTrain: False\
+loadSize: 256\
+max_dataset_size: inf\
+model: test\
+nThreads: 2\
+n_layers_D: 3\
+name: horse2zebra\
+ndf: 64\
+ngf: 64\
+no_dropout: False\
+no_flip: False\
+norm: instance\
+ntest: inf\
+output_nc: 3\
+phase: test\
+resize_or_crop: resize_and_crop\
+results_dir: ./results/0blocks/\
+serial_batches: False\
+which_direction: AtoB\
+which_epoch: latest\
+which_model_netD: basic\
+which_model_netG: resnet_9blocks\
+-------------- End ----------------\
+}
